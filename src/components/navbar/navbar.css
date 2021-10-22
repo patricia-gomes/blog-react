@@ -1,0 +1,57 @@
+body {
+	font-family: Arial;
+}
+.bannerFull {
+	height: 665px;
+    display: flex;
+    flex-direction: column;
+}
+img {
+	opacity: 0.9;
+}
+.TopNavBar nav {
+	top: 0;
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+    height: 50px;
+	background-color: #FF073A;
+	line-height: 50px;
+}
+.bannerFull img {
+	width: 100%;
+	height: 625px;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	margin-bottom: 40px;
+}
+.bannerFull h1 {
+	color: #0377d4;
+	font-size: 40px;
+	width: 100%;
+	height: 625px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+.listItems {
+	widows: 100%;
+	max-width: 1100px;
+    margin: auto;
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 13px;
+	display: flex;
+    justify-content: flex-end;
+}
+.listItems li {
+	cursor: pointer;
+	padding-left: 30px;
+}
+.listItems li:hover {
+	color: #56aff7;
+}
