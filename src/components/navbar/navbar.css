@@ -6,6 +6,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+.photoPerfil img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-top: 13px;
+}
 img {
 	opacity: 0.9;
 }

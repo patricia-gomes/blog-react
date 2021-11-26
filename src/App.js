@@ -10,12 +10,14 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
+import NotFound from "./pages/notfound/NotFound";
 
 import { BrowserRouter as Router,
   Switch, 
   Route,
   Link
 } from "react-router-dom";
+import imgAbout from "./korra2.jpg";
 
 function App() {
 
@@ -30,7 +32,10 @@ function App() {
               <li className="topItem"><Link className="link" to="/about" >Sobre</Link></li>
               <li className="topItem"><Link className="link" to="/contact" >Contato</Link></li>
               <li className="topItem"><Link className="link" to="/write" >Postar</Link></li>
-              <li className="topItem"><Link className="link" to="/register" >Registrar</Link></li>
+              <li className="topItem"><Link className="link" to="">Logout</Link></li>
+              <li className="photoPerfil">
+                <img src={imgAbout} alt="Imagem de perfil do usuário" />
+              </li>
             </ul>
           </nav>
         </div>
@@ -46,9 +51,10 @@ function App() {
           <Route path="/write" exact component={Write} > <Write /> /></Route>
           <Route path="/about" exact component={About} > <About /></Route>
           <Route path="/contact" exact component={Contact} > <Contact /></Route>
+          <Route path="*" exact component={NotFound} > <NotFound /></Route>
         </Switch>
       <Footer />
-    </Router> 
+    </Router>
   );
 }
 
