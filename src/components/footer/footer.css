@@ -1,0 +1,15 @@
+.network {
+	width: 100%;
+	background-color: #000;
+	height: 145px;
+}
+.rights-reserved {
+	width: 100%;
+	color: #FFF;
+	font-size: 12px;
+	background-color: #080808;
+	height: 60px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}

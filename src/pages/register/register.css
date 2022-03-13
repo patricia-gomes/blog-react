@@ -1,0 +1,30 @@
+.register { 	
+	width: 100%;
+	max-width: 840px;
+	margin: auto;
+	margin-bottom: 80px;
+    padding: 0px 10px 0px 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register h2 {
+	margin-bottom: 20px;
+}
+.registerForm input {
+	display: flex;
+    border: none;
+    min-width: 300px;
+    max-width: 305px;
+    height: 30px;
+    color:  grey;
+    margin: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.registerButton {
+	margin-top: 5px;
+}
+.loginButton {
+	margin-top: -20px;
+}

@@ -1,0 +1,36 @@
+.write {
+	width: 100%;
+	max-width: 840px;
+	margin: auto;
+	margin-bottom: 80px;
+	display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+.write img {
+	height: 250px;
+	margin-bottom: 12px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.formWrite i {
+	cursor: pointer;
+}
+.formWriteGroup {
+	display: flex;
+	flex-direction: column;
+}
+.fileInput {
+	margin-bottom: 12px;
+}
+.writeTitle {
+	margin-bottom: 15px;
+}
+.formWriteGroup input {
+	color: #6e6e6e;
+}
+.formWriteGroup textarea {
+	color: #6e6e6e;
+	min-height: 230px;
+	margin-bottom: 15px;
+}

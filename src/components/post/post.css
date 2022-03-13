@@ -1,0 +1,24 @@
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 55px;
+}
+.main img {
+	width: 310px;
+    height: 188px;
+	border-radius: 3%;
+	margin-bottom: 12px;
+}
+.post {
+	flex: 1 1 auto;
+	text-align: -webkit-center;
+}
+.post h3 {
+	margin-bottom: 10px;
+}
+.description-post {
+	width: 310px;
+	font-size: 13px;
+	font-family: "Varela Round", sans-serif;
+    color: #444;
+}
