@@ -20,7 +20,7 @@ import { BrowserRouter as Router,
 import imgAbout from "./korra2.jpg";
 
 function App() {
-
+  const user = false;
   return (
     <Router>
         <div className="TopNavBar">
@@ -32,9 +32,20 @@ function App() {
               <li className="topItem"><Link className="link" to="/about" >Sobre</Link></li>
               <li className="topItem"><Link className="link" to="/contact" >Contato</Link></li>
               <li className="topItem"><Link className="link" to="/write" >Postar</Link></li>
-              <li className="topItem"><Link className="link" to="">Logout</Link></li>
+              <li className="topItem">
+                {user &&  "Logout"}
+              </li>
               <li className="photoPerfil">
-                <img src={imgAbout} alt="Imagem de perfil do usuário" />
+                {
+                  user ? (
+                    <img src={imgAbout} alt="Imagem de perfil do usuário" />
+                   ) : (
+                      <ul className="listItems">
+                        <li className="topItem"><Link className="link" to="/login" >Login</Link></li>
+                        <li className="topItem"><Link className="link" to="/register" >Cadastrar</Link></li>
+                      </ul>
+                  )
+                }
               </li>
             </ul>
           </nav>
@@ -44,11 +55,11 @@ function App() {
           <Route exact path="/" component={Home}> 
             <Home /> 
           </Route>
-          <Route path="/login" exact component={Login} > <Login /></Route>
-          <Route path="/register" exact component={Register} > <Register /></Route>
-          <Route path="/settings" exact component={Settings} > <Settings /></Route>
+          <Route path="/login" exact component={Login} > {user ? <Home/> : <Login /> } </Route>
+          <Route path="/register" exact component={Register} > {user ? <Home/> : <Register /> } </Route>
+          <Route path="/settings" exact component={Settings} > {user ? <Settings/> : <Register /> } </Route>
           <Route path="/post/:postId" exact component={Single} > <Single /></Route>
-          <Route path="/write" exact component={Write} > <Write /> /></Route>
+          <Route path="/write" exact component={Write} > {user ? <Write/> : <Register /> } </Route>
           <Route path="/about" exact component={About} > <About /></Route>
           <Route path="/contact" exact component={Contact} > <Contact /></Route>
           <Route path="*" exact component={NotFound} > <NotFound /></Route>
