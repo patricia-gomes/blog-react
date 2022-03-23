@@ -8,23 +8,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:  grey;
+
 }
 .register h2 {
+    color:  #000;
 	margin-bottom: 20px;
 }
-.registerForm input {
+.register Form input {
 	display: flex;
     border: none;
     min-width: 300px;
     max-width: 305px;
     height: 30px;
-    color:  grey;
     margin: 10px 0;
     border-bottom: 1px solid lightgray;
 }
 .registerButton {
-	margin-top: 5px;
-}
-.loginButton {
-	margin-top: -20px;
+    color:  #fff;
+    background: #0590e1;
+	align-items: center;
+    justify-content: center;
 }

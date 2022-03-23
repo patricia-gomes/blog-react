@@ -5,12 +5,9 @@ export default function Contact() {
 		<div className="contact">
 			<h2>CONTACT</h2>
 			<form>
-				<label>Nome:</label><br/>
-				<input type="text" required /><br/><br/>
-				<label>Email:</label><br/>
-				<input type="email" required /><br/><br/>
-				<label>Mensagem:</label><br/><br/>
-				<textarea required></textarea><br/><br/>
+				<input type="text" placeholder="Nome" required /><br/><br/>
+				<input type="email" placeholder="Email" required /><br/><br/>
+				<textarea placeholder="Escreva sua mensagem..." required></textarea><br/><br/>
 
 				<button>Enviar</button>
 			</form>

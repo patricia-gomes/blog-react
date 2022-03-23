@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./login.css";
 
 export default function Login() {
@@ -6,9 +5,7 @@ export default function Login() {
 		<div className="login">
 		<h2>LOGIN</h2>
 			<form className="loginForm">
-				<label>Email:</label>
 				<input type="email" placeholder="email@gmail.com" required/>
-				<label>Password:</label>
 				<input type="password" placeholder="Senha" required/>
 				<button className="loginButton">Login</button>
 			</form>
